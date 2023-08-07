@@ -10,7 +10,7 @@ Para utilizar esta API, sigue los pasos a continuación:
 
 2. Instala las dependencias utilizando npm:
 
-`npm install`
+```npm install```
 
 3. Crea un archivo `.env` basado en el archivo `.env.template` y proporciona la URL de conexión a tu base de datos MongoDB.
 
@@ -18,7 +18,7 @@ Para utilizar esta API, sigue los pasos a continuación:
 
 5. Ejecuta el servidor utilizando el siguiente comando:
 
-`npm start`
+```npm start```
 
 El servidor se ejecutará en `http://localhost:3002/api/graphql`.
 
@@ -28,13 +28,13 @@ La API proporciona los siguientes endpoints GraphQL:
 
 ### 1. Búsqueda por nombre
 
-`Query: byName(user_id: String!, name: String!): [Promt]`
+```Query: byName(user_id: String!, name: String!): [Promt]```
 
 Este endpoint permite buscar promts por nombre. Debes proporcionar el `user_id` del usuario para obtener los promts asociados a ese usuario y el `name` que deseas buscar. La búsqueda es insensible a mayúsculas y minúsculas.
 
 ### 2. Búsqueda por etiquetas
 
-`Query: byTags(user_id: String!, tags: [String]!): [Promt]`
+```Query: byTags(user_id: String!, tags: [String]!): [Promt]```
 
 
 Este endpoint permite buscar promts por etiquetas. Debes proporcionar el `user_id` del usuario para obtener los promts asociados a ese usuario y un array de `tags` que deseas buscar.
