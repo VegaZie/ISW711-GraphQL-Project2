@@ -1,0 +1,29 @@
+{
+  "name": "isw711-graphql-project2",
+  "version": "1.0.0",
+  "description": "Backend para buscar prompts mediante nombre y etiquetas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VegaZie/ISW711-GraphQL-Project2.git"
+  },
+  "author": "VegaZie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VegaZie/ISW711-GraphQL-Project2/issues"
+  },
+  "homepage": "https://github.com/VegaZie/ISW711-GraphQL-Project2#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "graphql-tools": "^9.0.0",
+    "mongoose": "^7.4.2",
+    "nodemon": "^3.0.1"
+  }
+}
