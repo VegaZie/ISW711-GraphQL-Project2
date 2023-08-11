@@ -21,4 +21,13 @@ const searchPromptsByTags = async ({ user_id, tags }) => {
   }
 };
 
-module.exports = { searchPromptsByName, searchPromptsByTags };
+const promtGet = async ({ user_id }) => {
+  try {
+    const prompts = await Promt.find({ userID: user_id });
+    return prompts;
+  } catch (err) {
+    throw new Error("Hubo un error al buscar los promts del usuario");
+  }
+};
+
+module.exports = { searchPromptsByName, searchPromptsByTags, promtGet };

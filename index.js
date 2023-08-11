@@ -11,15 +11,15 @@ const { graphQLschema } = require("./schema/graphql-schema.js");
 const {
   searchPromptsByName,
   searchPromptsByTags,
+  promtGet
 } = require("./controllers/searchPromts");
 
 // Define los resolvers para las operaciones de búsqueda
 const graphqlResolvers = {
   byName: searchPromptsByName,
   byTags: searchPromptsByTags,
+  getUserPromts: promtGet
 };
-
-searchPromptsByTags({ user_id: "64a4c03a3401633ec0e86193", tags: ["Perros"] });
 
 // Configura la aplicación Express
 const app = express();

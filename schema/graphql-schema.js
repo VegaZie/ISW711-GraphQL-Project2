@@ -4,6 +4,7 @@ exports.graphQLschema = buildSchema(`
 type Query {
   byName(user_id: String!, name: String!): [Promt]
   byTags(user_id: String!, tags: [String]!): [Promt]
+  getUserPromts(user_id: String!): [Promt]
 }
 
 type Image {
